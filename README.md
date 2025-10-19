@@ -1,4 +1,4 @@
-# Lumin Consulting - PDF Processor Demo
+# Lumin Consulting - PDF Processor Demo Start Up
 
 Aplicación web que automatiza la extracción de datos de PDFs con **detección automática de tipo de documento**.
 
