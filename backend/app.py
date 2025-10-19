@@ -21,8 +21,7 @@ def allowed_file(filename):
 
 @app.route('/')
 def index():
-    frontend_dir = os.path.join(BASE_DIR, 'frontend')
-    return send_from_directory(frontend_dir, 'index.html')
+    return send_from_directory(BASE_DIR, 'index.html')
 
 @app.route('/static/<path:filename>')
 def send_static(filename):
