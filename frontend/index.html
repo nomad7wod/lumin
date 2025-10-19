@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumin Consulting | Automatización a Medida para MIPYME Peruanas</title>
+    <meta name="description" content="Eliminamos tareas manuales con automatización de PDF→Excel, reportes, inventario y mini-CRM. Compromiso ROI: medimos el tiempo ahorrado y reducción de errores.">
+    <meta property="og:title" content="Lumin Consulting | Automatización para MIPYME Peruanas">
+    <meta property="og:description" content="Automatización a medida: PDF→Excel, reportes, inventario/mini-CRM con compromiso ROI medible.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fallback styles if Tailwind fails to load */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #1e293b; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 1rem; }
+        
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+        
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+        
+        /* Focus visible enhancement */
+        *:focus-visible {
+            outline: 3px solid #06b6d4;
+            outline-offset: 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-slate-900 text-slate-100">
+    
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-4" aria-label="Navegación principal">
+            <div class="text-2xl font-bold text-cyan-400">Lumin Consulting</div>
+            
+            <ul class="hidden md:flex items-center gap-6 text-sm">
+                <li><a href="#servicios" class="hover:text-cyan-400 transition-colors focus:text-cyan-400">Servicios</a></li>
+                <li><a href="#industrias" class="hover:text-cyan-400 transition-colors focus:text-cyan-400">Industrias</a></li>
+                <li><a href="#por-que-lumin" class="hover:text-cyan-400 transition-colors focus:text-cyan-400">¿Por qué Lumin?</a></li>
+                <li><a href="#impacto" class="hover:text-cyan-400 transition-colors focus:text-cyan-400">Impacto</a></li>
+                <li><a href="#demo" class="hover:text-cyan-400 transition-colors focus:text-cyan-400">Demo Gratuita</a></li>
+            </ul>
+            
+            <a href="#demo" class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-semibold px-6 py-2 rounded-full transition-colors focus:bg-cyan-600">
+                Agendar Demo
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 px-4 overflow-hidden">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 opacity-50" aria-hidden="true"></div>
+            <div class="absolute inset-0 opacity-10" aria-hidden="true">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+            
+            <div class="container mx-auto relative z-10 max-w-5xl text-center animate-fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Automatización a medida para <span class="text-cyan-400">MIPYME peruanas</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+                    Eliminamos tareas manuales como conversión de <strong>PDF→Excel</strong>, generación de <strong>reportes</strong>, gestión de <strong>inventario/mini-CRM</strong> e integraciones con <strong>Oracle/OTBI</strong>. 
+                    <span class="text-cyan-400">Compromiso ROI</span>: medimos el tiempo ahorrado y la reducción de errores.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#demo" class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-bold px-8 py-4 rounded-2xl text-lg transition-all transform hover:scale-105 focus:scale-105 shadow-lg">
+                        Solicitar demo gratuita
+                    </a>
+                    <a href="#servicios" class="border-2 border-cyan-400 hover:bg-cyan-400/10 text-cyan-400 font-semibold px-8 py-4 rounded-2xl text-lg transition-all focus:bg-cyan-400/10">
+                        Ver servicios
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 px-4 bg-slate-800/50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Nuestros Servicios</h2>
+                <p class="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+                    Soluciones de automatización diseñadas específicamente para las necesidades de tu empresa.
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Service Card 1 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">PDF→Excel/CSV Automatizado</h3>
+                        <p class="text-slate-300">Convierte facturas, reportes y documentos complejos en datos estructurados sin errores manuales.</p>
+                    </article>
+
+                    <!-- Service Card 2 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">Reportes y Dashboards</h3>
+                        <p class="text-slate-300">Visualiza indicadores clave en tiempo real con reportes automáticos que se generan y distribuyen solos.</p>
+                    </article>
+
+                    <!-- Service Card 3 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">Mini-CRM + Facturación</h3>
+                        <p class="text-slate-300">Gestiona clientes, cotizaciones y facturación en un solo lugar sin sistemas complejos ni costosos.</p>
+                    </article>
+
+                    <!-- Service Card 4 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">Inventario y Conciliaciones</h3>
+                        <p class="text-slate-300">Control de stock automático con alertas y conciliaciones que detectan diferencias al instante.</p>
+                    </article>
+
+                    <!-- Service Card 5 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">Integración ERP (Oracle/OTBI)</h3>
+                        <p class="text-slate-300">Conecta tu Oracle ERP con otras herramientas y extrae datos OTBI sin conocimientos técnicos avanzados.</p>
+                    </article>
+
+                    <!-- Service Card 6 -->
+                    <article class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all hover:shadow-xl hover:shadow-cyan-500/10">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-400">Automatización Personalizada</h3>
+                        <p class="text-slate-300">Si tienes un proceso repetitivo único, diseñamos una solución específica que se ajusta a tu flujo de trabajo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Industries -->
+        <section id="industrias" class="py-20 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Industrias que Atendemos</h2>
+                <p class="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+                    Experiencia comprobada en sectores clave de la economía peruana.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">🛒</span> Retail y Distribución
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">📊</span> Estudios Contables
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">🔧</span> Talleres de Servicio
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">🏥</span> Clínicas y Consultorios
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">🏭</span> Manufactura y Producción
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full hover:border-cyan-400 hover:bg-slate-700 transition-all">
+                        <span class="text-cyan-400 font-semibold">📦</span> Logística y Almacenes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Lumin -->
+        <section id="por-que-lumin" class="py-20 px-4 bg-slate-800/50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">¿Por qué Lumin Consulting?</h2>
+                <p class="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+                    No solo automatizamos. Transformamos tu operación con compromiso medible y soporte cercano.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-cyan-400">Compromiso ROI</h3>
+                            <p class="text-slate-300">Medimos el impacto antes y después: horas ahorradas, errores eliminados y valor generado. No vendemos tecnología, vendemos resultados.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-cyan-400">Entrega Rápida</h3>
+                            <p class="text-slate-300">Implementaciones en semanas, no meses. Priorizamos soluciones pragmáticas que generan valor inmediato para tu equipo.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-cyan-400">Procesos a tu Medida</h3>
+                            <p class="text-slate-300">Adaptamos la tecnología a tu forma de trabajar, no al revés. Cada MIPYME es única y merece soluciones personalizadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-cyan-400">Dashboards Claros</h3>
+                            <p class="text-slate-300">Visualiza tus indicadores sin complicaciones. Interfaces intuitivas diseñadas para que cualquier usuario tome decisiones informadas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-700 rounded-2xl p-6 text-center">
+                    <p class="text-slate-300 mb-2">
+                        <strong class="text-cyan-400">Soporte cercano</strong> · Precios accesibles para MIPYME · Enfoque 100% en empresas peruanas
+                    </p>
+                    <p class="text-sm text-slate-400">
+                        Entendemos los desafíos locales: desde la integración con SUNAT hasta las particularidades del mercado peruano.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact / Case Studies -->
+        <section id="impacto" class="py-20 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Impacto Real en MIPYME</h2>
+                <p class="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+                    Resultados medibles que transforman operaciones y liberan tiempo valioso.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <article class="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 p-8 rounded-2xl text-center">
+                        <div class="text-5xl font-bold text-cyan-400 mb-2">120h</div>
+                        <div class="text-xl font-semibold mb-2">ahorradas/mes</div>
+                        <p class="text-slate-300 text-sm">
+                            Estudio contable eliminó ingreso manual de facturas con extracción automatizada PDF→Excel.
+                        </p>
+                    </article>
+
+                    <article class="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 p-8 rounded-2xl text-center">
+                        <div class="text-5xl font-bold text-cyan-400 mb-2">85%</div>
+                        <div class="text-xl font-semibold mb-2">de errores reducidos</div>
+                        <p class="text-slate-300 text-sm">
+                            Distribuidora logró conciliaciones exactas entre sistema de ventas e inventario físico.
+                        </p>
+                    </article>
+
+                    <article class="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 p-8 rounded-2xl text-center">
+                        <div class="text-5xl font-bold text-cyan-400 mb-2">3 días</div>
+                        <div class="text-xl font-semibold mb-2">a 2 horas</div>
+                        <p class="text-slate-300 text-sm">
+                            Clínica redujo tiempo de generación de reportes mensuales con dashboards automáticos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mid-page CTA Banner -->
+        <section class="py-16 px-4 bg-gradient-to-r from-cyan-600 to-blue-600">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+                    ¿Listo para eliminar tareas manuales?
+                </h2>
+                <p class="text-lg text-slate-900 mb-6">
+                    Agenda tu demo gratuita hoy y descubre cuánto tiempo y dinero puedes ahorrar.
+                </p>
+                <a href="#demo" class="inline-block bg-slate-900 hover:bg-slate-800 text-cyan-400 font-bold px-8 py-4 rounded-2xl text-lg transition-all transform hover:scale-105 focus:scale-105 shadow-lg">
+                    Solicitar demo ahora
+                </a>
+            </div>
+        </section>
+
+        <!-- PDF Upload Demo -->
+        <section id="pdf-demo" class="py-20 px-4 bg-slate-900">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cyan-400">
+                    Prueba Nuestra Tecnología Ahora
+                </h2>
+                <p class="text-slate-300 text-center mb-12 text-lg">
+                    Sube tu PDF (Factura o Guía de Transporte) y ve cómo extraemos los datos automáticamente en segundos.
+                </p>
+                
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 md:p-12">
+                    <form id="uploadForm" class="text-center">
+                        <div class="mb-8">
+                            <label for="pdfFile" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold px-8 py-4 rounded-xl cursor-pointer transition-all transform hover:scale-105 shadow-lg">
+                                📄 Seleccionar PDF
+                            </label>
+                            <input type="file" id="pdfFile" name="file" accept=".pdf" class="hidden" required>
+                            <div id="fileName" class="mt-4 text-slate-400 text-sm"></div>
+                        </div>
+                        
+                        <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-bold px-10 py-4 rounded-xl transition-all transform hover:scale-105 shadow-lg">
+                            🚀 Procesar PDF
+                        </button>
+                    </form>
+                    
+                    <!-- Loading Spinner -->
+                    <div id="loading" class="hidden mt-8">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400"></div>
+                            <p class="text-cyan-400">Procesando tu PDF...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Results -->
+                    <div id="results" class="hidden mt-8">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-6 text-center">✅ Resultados Extraídos</h3>
+                        <div id="resultsContent" class="space-y-4"></div>
+                    </div>
+                </div>
+                
+                <p class="text-center text-slate-400 mt-6 text-sm">
+                    💡 Esta es solo una demostración básica. Nuestras soluciones completas incluyen validación, integración con Excel, y mucho más.
+                </p>
+            </div>
+        </section>
+
+        <!-- Demo Form -->
+        <section id="demo" class="py-20 px-4 bg-slate-800/50">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Demo Gratuita</h2>
+                <p class="text-slate-300 text-center mb-12">
+                    Completa el formulario y te contactaremos en las próximas <strong class="text-cyan-400">24 horas</strong> para coordinar tu demo personalizada.
+                </p>
+                
+                <form id="demoForm" class="bg-slate-900 border border-slate-700 rounded-2xl p-8" novalidate>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="empresa" class="block text-sm font-semibold mb-2">
+                                Empresa <span class="text-red-400" aria-label="requerido">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="empresa" 
+                                name="empresa" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="empresa-error"
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                            <span id="empresa-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></span>
+                        </div>
+
+                        <div>
+                            <label for="ruc" class="block text-sm font-semibold mb-2">
+                                RUC <span class="text-slate-500">(opcional)</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="ruc" 
+                                name="ruc" 
+                                pattern="[0-9]{11}"
+                                maxlength="11"
+                                aria-describedby="ruc-help"
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                            <span id="ruc-help" class="text-slate-400 text-xs mt-1 block">11 dígitos</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="nombre" class="block text-sm font-semibold mb-2">
+                            Nombre Completo <span class="text-red-400" aria-label="requerido">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="nombre-error"
+                            class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                        >
+                        <span id="nombre-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></span>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">
+                                Email <span class="text-red-400" aria-label="requerido">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="email-error"
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                            <span id="email-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></span>
+                        </div>
+
+                        <div>
+                            <label for="telefono" class="block text-sm font-semibold mb-2">
+                                Teléfono/WhatsApp <span class="text-red-400" aria-label="requerido">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="telefono-error"
+                                placeholder="+51 999 999 999"
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                            <span id="telefono-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="industria" class="block text-sm font-semibold mb-2">Industria</label>
+                            <select 
+                                id="industria" 
+                                name="industria" 
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                                <option value="">Seleccionar...</option>
+                                <option value="retail">Retail/Distribución</option>
+                                <option value="contable">Estudio Contable</option>
+                                <option value="taller">Taller de Servicio</option>
+                                <option value="clinica">Clínica/Consultorio</option>
+                                <option value="manufactura">Manufactura</option>
+                                <option value="logistica">Logística</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="tamano" class="block text-sm font-semibold mb-2">Tamaño de Empresa</label>
+                            <select 
+                                id="tamano" 
+                                name="tamano" 
+                                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                            >
+                                <option value="">Seleccionar...</option>
+                                <option value="1-10">1-10 empleados</option>
+                                <option value="11-50">11-50 empleados</option>
+                                <option value="51-200">51-200 empleados</option>
+                                <option value="200+">200+ empleados</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="problema" class="block text-sm font-semibold mb-2">Principal Necesidad</label>
+                        <select 
+                            id="problema" 
+                            name="problema" 
+                            class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                        >
+                            <option value="">Seleccionar...</option>
+                            <option value="pdf-excel">Conversión PDF→Excel</option>
+                            <option value="reportes">Reportes y Dashboards</option>
+                            <option value="mini-crm">Mini-CRM y Facturación</option>
+                            <option value="inventario">Inventario y Conciliaciones</option>
+                            <option value="erp">Integración ERP/Oracle</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="mensaje" class="block text-sm font-semibold mb-2">Mensaje Adicional</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            rows="4" 
+                            class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all resize-none"
+                            placeholder="Cuéntanos más sobre tu necesidad..."
+                        ></textarea>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input 
+                                type="checkbox" 
+                                id="consentimiento" 
+                                name="consentimiento" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="consentimiento-error"
+                                class="mt-1 w-5 h-5 bg-slate-800 border-2 border-slate-700 rounded focus:outline-none focus:ring-2 focus:ring-cyan-400 checked:bg-cyan-500 checked:border-cyan-500 transition-all"
+                            >
+                            <span class="text-sm text-slate-300">
+                                Acepto ser contactado por Lumin Consulting para coordinar la demo gratuita. <span class="text-red-400" aria-label="requerido">*</span>
+                            </span>
+                        </label>
+                        <span id="consentimiento-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></span>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-bold px-8 py-4 rounded-xl text-lg transition-all transform hover:scale-[1.02] focus:scale-[1.02] shadow-lg"
+                    >
+                        Solicitar demo gratuita
+                    </button>
+
+                    <div id="successMessage" class="hidden mt-6 bg-green-500/10 border border-green-500 text-green-400 p-4 rounded-xl" role="alert">
+                        <strong>¡Gracias!</strong> Te contactaremos dentro de las próximas 24 horas para coordinar tu demo.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Preguntas Frecuentes</h2>
+                <p class="text-slate-300 text-center mb-12">Respuestas a las dudas más comunes sobre nuestros servicios.</p>
+                
+                <div class="space-y-4">
+                    <details class="bg-slate-800 border border-slate-700 rounded-2xl p-6 group">
+                        <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                            <span>¿Cuánto cuesta una automatización?</span>
+                            <span class="text-cyan-400 text-2xl group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <div class="mt-4 text-slate-300">
+                            Cada proyecto es único. Nuestros precios son competitivos y diseñados para MIPYME peruanas. Tras la demo gratuita, entregamos una cotización personalizada con estimación de ROI incluida. Inversiones típicas van desde S/. 2,500 para automatizaciones simples hasta S/. 15,000 para proyectos complejos con integraciones ERP.
+                        </div>
+                    </details>
+
+                    <details class="bg-slate-800 border border-slate-700 rounded-2xl p-6 group">
+                        <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                            <span>¿Cuánto tiempo toma implementar una solución?</span>
+                            <span class="text-cyan-400 text-2xl group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <div class="mt-4 text-slate-300">
+                            Automatizaciones básicas (PDF→Excel, reportes simples) toman entre 1-3 semanas. Proyectos medianos (mini-CRM, inventario) requieren 3-6 semanas. Integraciones ERP complejas pueden tomar 6-12 semanas. Siempre priorizamos entrega incremental para que veas valor desde el primer sprint.
+                        </div>
+                    </details>
+
+                    <details class="bg-slate-800 border border-slate-700 rounded-2xl p-6 group">
+                        <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                            <span>¿Qué tecnologías utilizan?</span>
+                            <span class="text-cyan-400 text-2xl group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <div class="mt-4 text-slate-300">
+                            Utilizamos Python para automatización y procesamiento de datos, Power BI y Tableau para dashboards, plataformas low-code cuando aportan velocidad, y desarrollos a medida en tecnologías modernas (React, Node.js, .NET). Lo importante no es la tecnología en sí, sino que resuelva tu problema de forma sostenible y escalable.
+                        </div>
+                    </details>
+
+                    <details class="bg-slate-800 border border-slate-700 rounded-2xl p-6 group">
+                        <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                            <span>¿Cómo miden el ROI de una automatización?</span>
+                            <span class="text-cyan-400 text-2xl group-open:rotate-45 transition-transform">+</span>
+                        </summary>
+                        <div class="mt-4 text-slate-300">
+                            Antes de implementar, medimos: horas/mes dedicadas a tareas manuales, tasa de errores actual, y costos asociados. Post-implementación, monitoreamos los mismos indicadores durante 3 meses. Entregamos un reporte comparativo que muestra tiempo ahorrado, errores eliminados y ROI en términos monetarios. Es nuestro compromiso diferenciador.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold text-cyan-400 mb-4">Lumin Consulting</div>
+                    <p class="text-slate-300 text-sm">
+                        Automatización a medida para MIPYME peruanas. Compromiso ROI y soporte cercano.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:contacto@luminconsulting.pe" class="hover:text-cyan-400">contacto@luminconsulting.pe</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="https://wa.me/51999999999" class="hover:text-cyan-400">+51 999 999 999 (WhatsApp)</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Lima, Perú
+                        </li>
+                        <li class="text-slate-400 text-xs">
+                            Horario: Lun–Vie 9:00–18:00
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Enlaces</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li><a href="#servicios" class="hover:text-cyan-400">Servicios</a></li>
+                        <li><a href="#industrias" class="hover:text-cyan-400">Industrias</a></li>
+                        <li><a href="#por-que-lumin" class="hover:text-cyan-400">¿Por qué Lumin?</a></li>
+                        <li><a href="#impacto" class="hover:text-cyan-400">Impacto</a></li>
+                        <li><a href="#demo" class="hover:text-cyan-400">Demo Gratuita</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+                <p class="mb-2">
+                    © 2025 Lumin Consulting. Todos los derechos reservados.
+                </p>
+                <p class="text-xs">
+                    <a href="#" class="hover:text-cyan-400">Política de Privacidad</a> · 
+                    <a href="#" class="hover:text-cyan-400">Términos de Servicio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation and submission
+        document.getElementById("demoForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Reset previous errors
+            const errorSpans = document.querySelectorAll("[id$=\"-error\"]");
+            errorSpans.forEach(span => {
+                span.classList.add("hidden");
+                span.textContent = "";
+            });
+            
+            // Remove aria-invalid from all inputs
+            const inputs = this.querySelectorAll("input[required], textarea[required]");
+            inputs.forEach(input => input.removeAttribute("aria-invalid"));
+            
+            let isValid = true;
+            let firstInvalidField = null;
+            
+            // Validate empresa
+            const empresa = document.getElementById("empresa");
+            if (!empresa.value.trim()) {
+                showError("empresa", "Por favor ingresa el nombre de tu empresa");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = empresa;
+            }
+            
+            // Validate nombre
+            const nombre = document.getElementById("nombre");
+            if (!nombre.value.trim()) {
+                showError("nombre", "Por favor ingresa tu nombre completo");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = nombre;
+            }
+            
+            // Validate email
+            const email = document.getElementById("email");
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                showError("email", "Por favor ingresa tu email");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = email;
+            } else if (!emailRegex.test(email.value)) {
+                showError("email", "Por favor ingresa un email válido");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = email;
+            }
+            
+            // Validate telefono
+            const telefono = document.getElementById("telefono");
+            if (!telefono.value.trim()) {
+                showError("telefono", "Por favor ingresa tu teléfono");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = telefono;
+            }
+            
+            // Validate consentimiento
+            const consentimiento = document.getElementById("consentimiento");
+            if (!consentimiento.checked) {
+                showError("consentimiento", "Debes aceptar ser contactado para continuar");
+                isValid = false;
+                if (!firstInvalidField) firstInvalidField = consentimiento;
+            }
+            
+            if (isValid) {
+                // TODO: integrate endpoint - send data to backend
+                // const formData = new FormData(this);
+                // fetch("/api/demo-request", { method: "POST", body: formData })
+                
+                // Show success message
+                document.getElementById("successMessage").classList.remove("hidden");
+                this.reset();
+                
+                // Scroll to success message
+                document.getElementById("successMessage").scrollIntoView({ 
+                    behavior: "smooth", 
+                    block: "center" 
+                });
+                
+                // Hide success message after 10 seconds
+                setTimeout(() => {
+                    document.getElementById("successMessage").classList.add("hidden");
+                }, 10000);
+            } else {
+                // Focus first invalid field
+                if (firstInvalidField) {
+                    firstInvalidField.focus();
+                }
+            }
+        });
+        
+        function showError(fieldId, message) {
+            const errorSpan = document.getElementById(fieldId + "-error");
+            const field = document.getElementById(fieldId);
+            
+            errorSpan.textContent = message;
+            errorSpan.classList.remove("hidden");
+            field.setAttribute("aria-invalid", "true");
+        }
+        
+        // Simple phone formatting
+        document.getElementById("telefono").addEventListener("input", function(e) {
+            let value = e.target.value.replace(/\D/g, "");
+            if (value.length > 11) value = value.slice(0, 11);
+            e.target.value = value;
+        });
+        
+        // RUC validation (11 digits)
+        document.getElementById("ruc").addEventListener("input", function(e) {
+            let value = e.target.value.replace(/\D/g, "");
+            if (value.length > 11) value = value.slice(0, 11);
+            e.target.value = value;
+        });
+        
+        // File upload handling
+        const fileInput = document.getElementById('pdfFile');
+        const fileName = document.getElementById('fileName');
+        
+        fileInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                fileName.textContent = '📎 ' + e.target.files[0].name;
+                fileName.classList.add('text-cyan-400');
+            }
+        });
+        
+        // PDF Upload functionality
+        const uploadForm = document.getElementById('uploadForm');
+        const resultsDiv = document.getElementById('results');
+        const loadingDiv = document.getElementById('loading');
+        const resultsContent = document.getElementById('resultsContent');
+        
+        if (uploadForm) {
+            uploadForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const file = fileInput.files[0];
+                if (!file) {
+                    alert('Por favor selecciona un archivo PDF');
+                    return;
+                }
+                
+                const formData = new FormData();
+                formData.append('file', file);
+                
+                // Show loading
+                loadingDiv.style.display = 'block';
+                resultsDiv.style.display = 'none';
+                
+                try {
+                    const response = await fetch('http://localhost:5001/api/upload', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    console.log('📥 Received data:', data);
+                    
+                    if (data.success) {
+                        const results = data.results;
+                        console.log('📊 Results:', results);
+                        let htmlContent = '';
+                        
+                        // Show document type
+                        htmlContent += `
+                            <div class="bg-gradient-to-r from-cyan-600 to-blue-600 p-4 rounded-lg mb-4 text-center">
+                                <strong class="text-white text-lg">📄 ${results.tipo_documento}</strong>
+                            </div>
+                        `;
+                        
+                        // Display fields based on what's available (works for both doc types)
+                        if (results.nro_factura) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Nro. Factura:</strong> 
+                                    <span class="text-white">${results.nro_factura}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.cliente) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Cliente:</strong> 
+                                    <span class="text-white">${results.cliente}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.booking) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">BK:</strong> 
+                                    <span class="text-white">${results.booking}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.contenedor) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Contenedor:</strong> 
+                                    <span class="text-white">${results.contenedor}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.total) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Total:</strong> 
+                                    <span class="text-white text-xl font-bold">${results.total}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.nro_guia) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Número de Guía:</strong> 
+                                    <span class="text-white">${results.nro_guia}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.punto_partida) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Punto de Partida:</strong> 
+                                    <span class="text-white">${results.punto_partida}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.observaciones) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg mb-3">
+                                    <strong class="text-cyan-400">Observaciones:</strong> 
+                                    <span class="text-white">${results.observaciones}</span>
+                                </div>
+                            `;
+                        }
+                        if (results.conductor) {
+                            htmlContent += `
+                                <div class="bg-slate-700 p-4 rounded-lg">
+                                    <strong class="text-cyan-400">Conductor:</strong> 
+                                    <span class="text-white">${results.conductor}</span>
+                                </div>
+                            `;
+                        }
+                        
+                        resultsContent.innerHTML = htmlContent;
+                        resultsDiv.style.display = 'block';
+                    } else {
+                        alert('Error: ' + (data.error || 'Error procesando el archivo'));
+                    }
+                } catch (error) {
+                    alert('Error al procesar el archivo: ' + error.message);
+                } finally {
+                    loadingDiv.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
